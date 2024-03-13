@@ -1,0 +1,4 @@
+#ifndef SUDOKU_SOLVER_TESTS_HPP
+#define SUDOKU_SOLVER_TESTS_HPP
+
+#endif

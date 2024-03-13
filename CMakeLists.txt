@@ -4,6 +4,8 @@ project(Sudoku_Solver CXX)
 
 set(CMAKE_C_STANDARD 23)
 
+include_directories(./include)
+
 add_executable(${PROJECT_NAME} ./src/main.cpp)
 
 add_executable(${PROJECT_NAME}_test ./tests/main.cpp)
