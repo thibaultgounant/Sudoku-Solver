@@ -4,6 +4,8 @@ project(Sudoku_Solver CXX)
 
 set(CMAKE_C_STANDARD 23)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+
 include_directories(./include)
 
 add_executable(${PROJECT_NAME} ./src/main.cpp)
