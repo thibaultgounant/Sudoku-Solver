@@ -5,6 +5,7 @@ project(Sudoku_Solver CXX)
 set(CMAKE_C_STANDARD 23)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 include_directories(./include)
 
