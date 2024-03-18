@@ -9,6 +9,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 include_directories(./include)
 
-add_executable(${PROJECT_NAME} ./src/main.cpp)
+aux_source_directory(./src/classes CLASSES)
 
-add_executable(${PROJECT_NAME}_test ./tests/main.cpp)
+add_executable(${PROJECT_NAME} ./src/main.cpp ${CLASSES})
+add_executable(${PROJECT_NAME}_test ./tests/main.cpp ${CLASSES})
