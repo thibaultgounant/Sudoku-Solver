@@ -13,8 +13,11 @@ private:
 
 public:
     Matrix(int m, int n);
-    Matrix(int m, int n, const int* data);
+    Matrix(int m, int n, const int *data);
+
     ~Matrix();
+
+    friend std::ostream &operator<<(std::ostream& os, const Matrix& matrix);
 };
 
 #endif
