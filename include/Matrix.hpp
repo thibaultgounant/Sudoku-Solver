@@ -7,9 +7,9 @@
 class Matrix {
 
 private:
-    int rows;
-    int columns;
-    int* array;
+    int _rows;
+    int _cols;
+    int* _array;
 
 public:
     Matrix(int m, int n);
@@ -18,6 +18,13 @@ public:
     ~Matrix();
 
     friend std::ostream &operator<<(std::ostream& os, const Matrix& matrix);
+
+    int rows();
+    int cols();
+    int* values();
+
+    int get(int row, int col);
+    Matrix& set(int row, int col, int value);
 };
 
 #endif
